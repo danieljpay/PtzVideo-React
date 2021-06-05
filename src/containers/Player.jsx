@@ -3,7 +3,6 @@ import { connect } from 'react-redux';
 import { getVideoSource } from '../actions';
 import { Redirect } from 'react-router-dom';
 import '../assets/styles/components/Player.scss';
-import NotFound from './NotFound';
 
 const Player = props => {
     const { id } = props.match.params;
