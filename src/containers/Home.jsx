@@ -6,7 +6,7 @@ import Carousel from '../components/Carousel';
 import CarouselItem from '../components/CarouselItem';
 import '../assets/styles/App.scss';
 
-const Home = ({ mylist, trends, originals }) => {
+const Home = ({ mylist, trends, originals  }) => {
     return (
         <>
             <Search />
@@ -16,7 +16,11 @@ const Home = ({ mylist, trends, originals }) => {
                     <Carousel>
                         {
                             mylist.map(item =>
-                                <CarouselItem key={item.id} {...item} />
+                                <CarouselItem 
+                                    key={item.id} 
+                                    {...item}
+                                    isList
+                                />
                             )
                         }
                     </Carousel>
